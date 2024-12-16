@@ -1,0 +1,328 @@
+/* OBS: Tive um final de semana muito corrido, tentei pelo menos fazer o principal do site em menos de 1 dia, me da
+um desconto vai :( queria deixar bem mais responsivo e bonitinho, mas o tempo me cobrou :( */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: 0;
+}
+
+:root{
+    --color-header: #3f2305;
+    --color-section: #f2ead3;
+    --color-carousel: #dfd7bf;
+    --text-color-p: #333333;
+    --text-color-p-title: #a4907c;
+}
+
+body{
+    font-family: "League Spartan", serif;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+header{
+    background-color: var(--color-header);
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.mobile-menu {
+    display: none;
+    cursor: pointer;
+}
+  
+.mobile-menu div {
+    width: 32px;
+    height: 2px;
+    background: #fff;
+    margin: 8px;
+    transition: 0.3s;
+}
+
+.header-logo{
+    height: 100%;
+}
+
+.image-logo{
+    max-width: 150px;
+    padding: .6rem;
+    height: 100%;
+}
+
+.menu-links{
+    display: flex;
+    gap: 1.5rem;
+    text-align: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.links-actions{
+    color: var(--color-section);
+}
+
+.first-section{
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    min-height: 670px;
+    background-color: var(--color-section);
+    flex-wrap: wrap;
+}
+
+.banner-barbie{
+    height: 100%;
+}
+
+.infos-barbie{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    padding-top: 1rem;
+    width: 50%;
+}
+
+.title-barbie{
+    color: var(--color-header);
+    font-size: 3rem;
+}
+
+span{
+    color: var(--text-color-p-title);
+    font-weight: 500;
+}
+
+.title-infos{
+    color: var(--color-header);
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+
+.description-infos{
+    color: var(--text-color-p);
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+.genero-sinopse{
+    display: flex;
+    flex-direction: column;
+    gap: 1.3rem;
+}
+
+.genero-sinopse-info{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.info-details{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.dirigido-situacao-orcamento{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.escrito-idioma-receita{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.dirigido, .situacao, .orcamento, .escrito, .idioma, .receita{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.second-section{
+    background-color: var(--color-carousel);
+    display: flex;
+    flex-direction: column;
+    min-height: 200px;
+}
+
+.actors{
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.actor{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .5rem;
+}
+
+.name-actor{
+    color: var(--text-color-p);
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.character{
+    color: var(--text-color-p);
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+.titulo-secao{
+    display: flex;
+    gap: 1rem;
+    padding: 1.8rem 4rem;
+}
+
+.title-section{
+    font-size: 2.5rem;
+    color: var(--color-header);
+    font-weight: bold;
+}
+
+.btn-action{
+    padding: 2px 25px;
+    background-color: var(--color-header);
+    color: var(--color-section);
+    border-radius: 20px;
+}
+
+.owl-carousel .item img{
+    max-width: 150px;
+}
+
+
+.third-section{
+    background-color: var(--color-section);
+    display: flex;
+    flex-direction: column;
+    min-height: 600px;
+}
+
+.cards{
+    display: flex;
+    justify-content: space-around;
+    gap: 2rem;
+    padding: 1rem 4rem;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 80%;
+    background-color: var(--color-carousel);
+    padding: 3rem;
+    border-radius: 10px;
+    line-height: 1.5rem;
+}
+
+.comentario-usuario{
+    display: flex;
+    flex-direction: column;
+    gap: .8rem;
+    font-size: 1.2rem;
+}
+
+.data-nota{
+    display: flex;
+    justify-content: space-between;
+}
+
+.bold{
+    font-weight: bold;
+    color: var(--color-header);
+}
+
+.footer{
+    background-color: var(--color-header);
+    display: flex;
+    justify-content: space-between;
+    gap: 5rem;
+    padding: 2rem 4rem;
+}
+
+.footer-information{
+    display: flex;
+    gap: 5rem;
+    padding: 1rem;
+}
+
+.image-logo-footer{
+    max-width: 250px;
+}
+
+.informations{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.informations a{
+    color: var(--color-section)
+}
+
+
+/* TABLETS */
+
+@media screen and (min-width: 734px) and ( max-width: 923px){
+
+    body {
+        overflow-x: hidden;
+      }
+
+      header{
+        justify-content: space-between;
+      }
+
+    .links-actions{
+        display: none;
+    }
+
+    .mobile-menu{
+        display: block;
+    }
+
+    .infos-barbie{
+        width: 100%;
+        align-items: center;
+    }
+
+    .titulo-secao{
+        padding: 1.8rem;
+    }
+
+    .cards{
+        width: 100%;
+        flex-wrap: wrap;
+        padding: 0 1.8rem 4rem 1.8rem;
+    }
+
+    .card{
+        width: 100%
+    }
+
+    .footer{
+        flex-wrap: wrap;
+        gap: 2rem;
+        padding: 0rem 1rem;
+    }
+
+    .footer-information{
+        padding: 1rem 2rem 1rem 0;
+    }
+
+    .image-logo-footer{
+        padding-top: 1rem;
+    }
+}
